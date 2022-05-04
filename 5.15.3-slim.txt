@@ -1,0 +1,7 @@
+//qt5 full source
+mingw32-make clean
+
+./configure.bat -recheck-all -opensource -confirm-license -platform win32-g++ -release -prefix "C:/qt/5.15.3-mingw64-slim/" -qt-freetype -sql-sqlite -no-sql-odbc -system-zlib -system-libpng -system-libjpeg -no-compile-examples -nomake tests -nomake examples -no-feature-concurrent -no-feature-xml -no-feature-testlib -skip qt3d -skip qtactiveqt -skip qtandroidextras -skip qtcanvas3d -skip qtcharts -skip qtconnectivity -skip qtdatavis3d -skip qtdeclarative -skip qtdoc -skip qtgamepad -skip qtgraphicaleffects -skip qtlocation -skip qtmacextras -skip qtmultimedia -skip qtnetworkauth -skip qtpurchasing -skip qtquickcontrols -skip qtquickcontrols2 -skip qtremoteobjects -skip qtscript -skip qtscxml -skip qtsensors -skip qtserialbus -skip qtserialport -skip qtspeech -skip qttools -skip qttranslations -skip qtvirtualkeyboard -skip qtwayland -skip qtwebchannel -skip qtwebsockets -skip qtwebview -skip qtx11extras -skip qtxmlpatterns -skip qtwebengine -skip qtwebview -skip qtwebglplugin -no-openssl -opengl desktop -optimize-size
+
+mingw32-make -j16
+mingw32-make install

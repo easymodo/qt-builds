@@ -1,0 +1,19 @@
+//qt6-base
+./configure.bat -opensource -confirm-license -platform win32-g++ -release -prefix "C:/qt/6.3.0-mingw64-slim/" -no-openssl -opengl desktop -qt-freetype -sql-sqlite -no-sql-odbc -no-sql-ibase -no-sql-psql -no-sql-mysql -system-zlib -system-libpng -system-libjpeg -nomake tests -nomake examples -no-feature-concurrent -no-feature-testlib -optimize-size
+
+cmake --build . --parallel
+cmake --install .
+
+---------------------------
+//qt6 extras svg
+
+cmake . -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH="C:/qt/6.3.0-mingw64-slim/"
+cmake --build . --parallel
+cmake --install .
+
+---------------------------
+//qt6 extras imageformats
+
+cmake . -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH="C:/qt/6.2.2-mingw64-slim/"
+cmake --build . --parallel
+cmake --install .
